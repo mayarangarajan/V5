@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mouse Accuracy Game</title>
+		<link rel="stylesheet" href="./index.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@unocss/reset/tailwind.min.css">
+		<script defer src="./index.js"></script>
+	</head>
+
+	<body class="un-cloak min-h-screen flex flex-col items-center justify-center">
+		<div id="gameContainer" class="w-full max-w-5xl">
+			<!-- Settings Section -->
+			<div id="settingsSection" class="mb-4 p-4 bg-white rounded shadow-md">
+				<div id="gameTimeSettings" class="flex justify-between mb-4">
+					<!-- Game Time Input -->
+					<label for="gameTimeInput" class="block text-sm font-medium text-gray-700">Set Game Time (in seconds):</label>
+					<input
+						type="number"
+						id="gameTimeInput"
+						min="1"
+						value="30"
+						class="mt-1 block w-full border border-gray-300 rounded-md"
+					/>
+				</div>
+
+				<!-- Start Button -->
+				<div class="flex justify-center" id="buttonContainer">
+					<button id="startGame" class="bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-purple-500">Start</button>
+				</div>
+			</div>
+
+			<!-- Timer Display -->
+			<div id="timerDisplay" class="text-xl mt-4">Time left: 30s</div>
+
+			<!-- Game Area -->
+			<div id="gameArea" class="relative w-full h-[600px] bg-gray-200 rounded-md shadow-md">
+				<!-- Targets are generated here -->
+			</div>
+
+			<!-- Scoreboard -->
+			<div id="scoreboard" class="mt-4 hidden p-4 bg-white rounded shadow-md">
+				<h2 class="text-xl font-bold text-center mb-4">Scoreboard</h2>
+				<p id="totalTargets" class="text-lg">Total targets: 0</p>
+				<p id="targetsClicked" class="text-lg">Targets clicked: 0</p>
+				<p id="missedTargets" class="text-lg">Missed targets: 0</p>
+				<p id="finalScore" class="text-lg">Final score: 0</p>
+			</div>
+		</div>
+
+		<!-- End of game Audio -->
+		<audio id="endGameAudio" hidden loop><source src="./yippee.mp3" type="audio/mpeg" /></audio>
+
+		<!-- Unocss Runtime (if needed) -->
+		<script src="https://cdn.jsdelivr.net/npm/@unocss/runtime/attributify.global.js"></script>
+	</body>
+</html>

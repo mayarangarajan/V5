@@ -1,0 +1,42 @@
+/* Screen Area */
+/* body {
+	margin: 0;
+	padding: 0;
+	background-color: lightblue;
+	align-items: center;
+	height: 100vh;
+} */
+
+/* Game Area */
+/* #gameArea {
+	margin: auto;
+	width: 1300px;
+	height: 600px;
+	background-color: #fff;
+} */
+
+/* For UnoCSS if needed */
+[un-cloak] {
+	display: none;
+}
+
+/* Scoreboard */
+/* #scoreboard {
+	align-items: center;
+	padding: 20px;
+	margin-top: 20px;
+	background-color: #fff;
+} */
+
+/* Start Button */
+/* #startGame {
+	background-color: #28a745;
+	color: white;
+} */
+
+/* Timer Display */
+/* #timerDisplay {
+	font-size: 20px;
+	font-weight: bold;
+	color: #333;
+} */
